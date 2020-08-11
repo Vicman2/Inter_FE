@@ -1,0 +1,46 @@
+.products{
+    width: 80%;
+    background-color: white;
+    margin: 20px;
+    color: rgb(145, 127, 127);
+}
+.Headings{
+    display: flex;
+    justify-content: space-between;
+}
+.no1{
+    width: 7%;
+    text-align: center;
+    padding-top: 10px;
+}
+.no{
+    width: 7%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.name{
+    width: 25%;
+    padding-left: 3px;
+}
+.category{
+    width: 10%;
+}
+.barcode{
+    width: 20%;
+}
+.action{
+    width: 10%;
+}
+.price{
+    width: 10%;
+}
+.expiry{
+    width: 10%;
+}
+.created{
+    width: 10%;
+}

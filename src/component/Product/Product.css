@@ -1,0 +1,31 @@
+.Product{
+    display: flex;
+    padding: 10px 3px;
+}
+.Prod_Image_Cont{
+    width: 120px;
+    height: 110px;
+}
+.Prod_Image_Cont img{
+    height: 100%;
+    width: 100%;
+}
+.action{
+    justify-content: space-around; 
+}
+.action p{
+    margin: 0;
+}
+.actionpoint{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(122, 11, 80);
+    color: white;
+    margin: 0;
+    border-radius: 50px;
+    margin-right: 20px;
+    padding: 7px;
+}
+.Odd{
+    background-color: rgb(241, 236, 236);
+}

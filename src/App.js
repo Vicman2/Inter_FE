@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import axios from 'axios'
 import './App.css';
+import Header from './component/Header/Header';
+import Nav from './component/Nav/Nav';
+import Products from './container/Products/products';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class  App extends Component  {
+  state = {
+    products : []
+  }
+  componentDidMount(){
+    axios.get('https://tradex.itskillscenter.com/api/categories/groceries')
+    .then(res => {
+      console.log(res.data)
+    })
+  }
+  render(){
+    return (
+      <div className="App">
+        <header>
+          <Header />
+        </header>
+        <main className="App_Dash">
+          <Nav />
+          <Products />
+        </main>
+      </div>
+    );
+  }
 }
 
 export default App;
